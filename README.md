@@ -1,4 +1,4 @@
-# Analytics.node
+# node.analytics
 
 ## Example
 
