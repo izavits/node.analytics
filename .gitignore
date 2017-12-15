@@ -29,12 +29,3 @@ nbproject
 .idea
 .vscode
 node_modules
-
-# Data files to ignore
-scripts/Gitter/etcher_data.txt
-scripts/Gitter/resin_chat_data.txt
-scripts/Gitter/resinos_chat_data.txt
-scripts/Gitter/data.txt
-scripts/Mixpanel/mixpanelUsers.json
-scripts/data/keen.txt
-scripts/data/builds_dataset.txt
