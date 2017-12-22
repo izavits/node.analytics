@@ -10,7 +10,8 @@ describe('Sentry-node', function () {
         // random settings - do not correspond to real project
         config: 'https://123456789@app.getsentry.com/52723',
         release: '1',
-        serverName: 'test'
+        serverName: 'test',
+        disableConsoleAlerts: true
     };
 
     beforeEach(function () {
@@ -32,7 +33,8 @@ describe('Sentry-node', function () {
             .global('sentry')
             .option('config', '')
             .option('serverName', null)
-            .option('release', null));
+            .option('release', null)
+            .option('disableConsoleAlerts', true));
     });
 
     describe('before loading', function () {
@@ -92,6 +94,45 @@ describe('Sentry-node', function () {
                 analytics.identify('id', { trait: true });
                 analytics.called(global.sentry.setContext, { id: 'id', trait: true });
             });
+        });
+
+        describe('#associate Context', function () {
+            beforeEach(function () {
+                analytics.stub(global.sentry, 'identify');
+                analytics.stub(global.sentry, 'setContext');
+                analytics.stub(global.sentry, 'mergeContext');
+            });
+
+            it('should send an id in setContext', function () {
+                analytics.setContext({ id: 'id' });
+                analytics.called(global.sentry.setContext, { id: 'id' });
+            });
+
+            it('should send an id in mergeContext', function () {
+                analytics.mergeContext({ id: 'id' });
+                analytics.called(global.sentry.mergeContext, { id: 'id' });
+            });
+
+            it('should send traits in setContext', function () {
+                analytics.setContext({ trait: true });
+                analytics.called(global.sentry.setContext, { trait: true });
+            });
+
+            it('should send traits in mergeContext', function () {
+                analytics.mergeContext({ trait: true });
+                analytics.called(global.sentry.mergeContext, { trait: true });
+            });
+
+            it('should send an id and traits in setContext', function () {
+                analytics.setContext({ id: 'id',  trait: true });
+                analytics.called(global.sentry.setContext, { id: 'id', trait: true });
+            });
+
+            it('should send an id and traits in mergeContext', function () {
+                analytics.mergeContext({ id: 'id',  trait: true });
+                analytics.called(global.sentry.mergeContext, { id: 'id', trait: true });
+            });
+
         });
 
         describe('#captureException', function () {
