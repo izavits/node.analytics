@@ -11,6 +11,7 @@ describe('Sentry-node', function () {
         config: 'https://123456789@app.getsentry.com/52723',
         release: '1',
         serverName: 'test',
+        captureUnhandledRejections: true,
         disableConsoleAlerts: true
     };
 
@@ -34,6 +35,7 @@ describe('Sentry-node', function () {
             .option('config', '')
             .option('serverName', null)
             .option('release', null)
+            .option('captureUnhandledRejections', true)
             .option('disableConsoleAlerts', true));
     });
 
