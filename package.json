@@ -65,7 +65,7 @@
     "omit": "harrietgrace/omit",
     "pick": "ianstormtaylor/pick",
     "proclaim": "^3.4.1",
-    "raven": "^1.1.4",
+    "raven": "^2.3.0",
     "segmentio-facade": "^3.0.2",
     "slug-component": "^1.1.0",
     "to-no-case": "^0.1.3",
