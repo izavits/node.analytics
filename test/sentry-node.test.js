@@ -126,12 +126,12 @@ describe('Sentry-node', function () {
             });
 
             it('should send an id and traits in setContext', function () {
-                analytics.setContext({ id: 'id',  trait: true });
+                analytics.setContext({ id: 'id', trait: true });
                 analytics.called(global.sentry.setContext, { id: 'id', trait: true });
             });
 
             it('should send an id and traits in mergeContext', function () {
-                analytics.mergeContext({ id: 'id',  trait: true });
+                analytics.mergeContext({ id: 'id', trait: true });
                 analytics.called(global.sentry.mergeContext, { id: 'id', trait: true });
             });
 
@@ -148,6 +148,16 @@ describe('Sentry-node', function () {
                 }
                 catch (e) {
                     analytics.captureException(e);
+                    analytics.called(global.sentry.captureException);
+                }
+            });
+
+            it('should send an exception with additional options', function () {
+                try {
+                    throw new Error('Whoops!');
+                }
+                catch (e) {
+                    analytics.captureException(e, { user: 'johndoe' });
                     analytics.called(global.sentry.captureException);
                 }
             });
