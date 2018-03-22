@@ -11,6 +11,10 @@
     "node",
     "nodejs"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/izavits/node.analytics.git"
+  },
   "author": "izavits <izavits@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
