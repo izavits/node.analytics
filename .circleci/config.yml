@@ -1,0 +1,17 @@
+---
+version: 2
+jobs:
+  build:
+    docker:
+      - image: library/docker:1.12.6
+    working_directory: /tmp/build
+    steps:
+      - checkout
+      - run:
+          npm test
+      - deploy:
+          command: |
+              # Tag the branch
+              apk add --no-cache git
+              tag=$(git describe --tags) || true
+              
