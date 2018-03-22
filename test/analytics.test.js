@@ -3,14 +3,11 @@ var Facade = require('segmentio-facade');
 var analytics = require('../lib/core/index.js');
 var assert = require('proclaim');
 var createIntegration = require('../lib/integration/index.js');
-var extend = require('@ndhoule/extend');
 var type = require('component-type');
 var sinon = require('sinon');
 var tick = require('next-tick');
-
 var Identify = Facade.Identify;
 var group = analytics.group();
-var store = Analytics.store;
 var user = analytics.user();
 
 describe('Analytics', function () {
