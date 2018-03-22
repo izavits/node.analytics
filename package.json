@@ -7,10 +7,12 @@
     "test": "./node_modules/mocha/bin/mocha"
   },
   "keywords": [
-    "analytics"
+    "analytics",
+    "node",
+    "nodejs"
   ],
   "author": "izavits <izavits@gmail.com>",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "@ndhoule/after": "^1.0.0",
     "@ndhoule/clone": "^1.0.0",
