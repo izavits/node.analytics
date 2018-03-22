@@ -1,5 +1,5 @@
 {
-  "name": "analytics.node",
+  "name": "node.analytics",
   "version": "1.0.0",
   "description": "A library to integrate analytics to nodejs applications",
   "main": "index.js",
