@@ -1,5 +1,6 @@
 # node.analytics
 [![Build Status](https://travis-ci.org/izavits/node.analytics.svg?branch=master)](https://travis-ci.org/izavits/node.analytics)
+[![CircleCI](https://circleci.com/gh/izavits/node.analytics.svg?style=shield&circle-token=:circle-ci-badge-token)](https://circleci.com/gh/izavits/node.analytics)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Example
