@@ -1,4 +1,5 @@
 # node.analytics
+[![Build Status](https://travis-ci.org/izavits/node.analytics.svg?branch=master)](https://travis-ci.org/izavits/node.analytics)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Example
@@ -22,4 +23,3 @@ analytics.track('my event', { distinct_id: 123, descr: 'test event' }, function 
     console.log('done tracking event');
 });
 ```
-
