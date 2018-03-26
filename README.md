@@ -6,7 +6,7 @@
 ![npm](https://badge.fury.io/js/analytica.svg)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Semver](https://img.shields.io/:semver-1.0.4-brightgreen.svg?style=flat-square)](http://semver.org)
+[![Semver](https://img.shields.io/:semver-2.0.0-brightgreen.svg?style=flat-square)](http://semver.org)
 
 ## Install
 Via npm:
