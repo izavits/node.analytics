@@ -26,8 +26,8 @@ Example usage:
 Require the core analytics library and the mixpanel integration:
 
 ```
-var analytics = require('analytics.node').core;
-var mp = require('analytics.node').mixpanelIntegration;
+var analytics = require('analytica').core;
+var mp = require('analytica').mixpanelIntegration;
 analytics.addIntegration(mp);
 var options = {token: "<YOUR_TOKEN>"};
 analytics.initialize({'Mixpanel': options});
