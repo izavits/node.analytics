@@ -9,7 +9,7 @@
 Via npm:
 
 ```
-npm install --save node.analytics
+npm install --save analytica
 ```
 
 ## API
