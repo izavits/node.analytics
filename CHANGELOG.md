@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Licence badge
 
 ### Removed
+- Unneeded code
 - Unneeded dependencies
 - Unneeded devDependencies
 
