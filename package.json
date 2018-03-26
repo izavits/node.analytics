@@ -15,6 +15,9 @@
     "type": "git",
     "url": "https://github.com/izavits/node.analytics.git"
   },
+  "bugs": {
+    "url": "https://github.com/izavits/node.analytics/issues"
+  },
   "author": "izavits <izavits@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {

@@ -1,0 +1,15 @@
+#editor settings
+.idea
+.editorconfig
+
+#tests
+test
+coverage
+
+#build tools
+.travis.yml
+.jenkins.yml
+.codeclimate.yml
+.circleci
+
+node_modules
