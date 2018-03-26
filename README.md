@@ -3,6 +3,7 @@
 > A library to integrate analytics to nodejs applications
 
 [![Build Status](https://travis-ci.org/izavits/node.analytics.svg?branch=master)](https://travis-ci.org/izavits/node.analytics)
+![npm](https://img.shields.io/npm/v/analytica.svg)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Install
