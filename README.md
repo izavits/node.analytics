@@ -1,25 +1,60 @@
 # node.analytics
+
+> A library to integrate analytics to nodejs applications
+
 [![Build Status](https://travis-ci.org/izavits/node.analytics.svg?branch=master)](https://travis-ci.org/izavits/node.analytics)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## Example
+## Install
+Via npm:
 
 ```
-// Require the core analytics lib
+npm install --save node.analytics
+```
+
+## API
+The module exports methods to:
+- require the core analytics lib
+- require the provided integrations
+- add the desired integration
+- initialize the library
+- track event
+
+Example usage:
+
+Require the core analytics library and the mixpanel integration:
+
+```
 var analytics = require('analytics.node').core;
-
-// Require the mixpanel integration
 var mp = require('analytics.node').mixpanelIntegration;
-
-var options = {token: "<YOUR_TOKEN>"};
 analytics.addIntegration(mp);
+var options = {token: "<YOUR_TOKEN>"};
 analytics.initialize({'Mixpanel': options});
-
-analytics.identify(123, { name: 'testuser', email: 'testemail@test.com', '$distinct_id': 123 }, function () {
-    console.log('done identifying user');
-});
-
-analytics.track('my event', { distinct_id: 123, descr: 'test event' }, function () {
-    console.log('done tracking event');
-});
 ```
+
+Identify user and track event:
+
+```
+analytics.identify(123, { name: 'testuser', email: 'testemail@test.com', '$distinct_id': 123 },
+  function () {
+    console.log('done identifying user');
+  });
+
+analytics.track('my event', { distinct_id: 123, descr: 'test event' },
+  function () {
+    console.log('done tracking event');
+  });
+```
+
+## Support
+If you're having any problem, please raise an issue on GitHub
+
+## Tests
+Run the test suite by doing:
+
+```
+npm test
+```
+
+## License
+The project is licensed under the Apache 2.0 license.
