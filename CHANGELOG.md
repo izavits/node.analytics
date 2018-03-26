@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+- Semver badge
+- PRs welcome badge
+
 ## [1.0.4] - 2018-03-26
 ### Added
 - Fixes in README
