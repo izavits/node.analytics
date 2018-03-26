@@ -18,8 +18,13 @@
   "author": "izavits <izavits@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
+    "lodash": "^4.17.4",
+    "lodash-deep": "^2.0.0",
+    "mixpanel": "^0.7.0",
+    "universal-analytics": "^0.4.8",
+    "raven": "^2.3.0",
+    "gosquared": "3.1.0",
     "@segment/convert-dates": "^1.0.0",
-    "@segment/fmt": "^1.0.0",
     "@segment/isodate-traverse": "^1.0.1",
     "@segment/spy": "^1.0.0",
     "@segment/store": "^1.3.20",
@@ -31,29 +36,15 @@
     "component-emitter": "^1.2.1",
     "component-type": "^1.2.1",
     "debug": "^0.7.4",
-    "domify": "^1.4.0",
-    "gosquared": "3.1.0",
-    "inherits": "^2.0.1",
     "is": "^3.1.0",
-    "lodash": "^4.17.4",
-    "lodash-deep": "^2.0.0",
-    "mixpanel": "^0.7.0",
     "next-tick": "^0.2.2",
-    "proclaim": "^3.4.1",
-    "raven": "^2.3.0",
     "segmentio-facade": "^3.0.2",
     "to-no-case": "^0.1.3",
-    "universal-analytics": "^0.4.8",
     "uuid": "^2.0.2"
   },
   "devDependencies": {
-    "@segment/eslint-config": "^3.1.1",
-    "compat-trigger-event": "^1.0.0",
-    "component-each": "^0.2.6",
-    "istanbul": "^0.4.3",
+    "proclaim": "^3.4.1",
     "mocha": "^2.2.5",
-    "sinon": "^1.7.3",
-    "watchify": "^3.7.0",
-    "@segment/clear-env": "^2.0.0"
+    "sinon": "^1.7.3"
   }
 }
