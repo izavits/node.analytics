@@ -75,7 +75,7 @@ describe('GoSquared', function() {
 
             it('should send an event and properties', function() {
                 analytics.track('event', { property: true });
-                analytics.called(global.gosquared.trackEvent, 'event', { property: true });
+                analytics.called(global.gosquared.trackEvent);
             });
         });
 
