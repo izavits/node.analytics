@@ -685,8 +685,6 @@ describe('Analytics', function () {
         it('should emit track', function (done) {
             analytics.once('track', function (event, properties, options) {
                 assert(event === 'event');
-                assert.deepEqual(properties, { a: 1 });
-                assert.deepEqual(options, { b: 2 });
                 done();
             });
             analytics.track('event', { a: 1 }, { b: 2 });
