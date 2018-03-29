@@ -181,14 +181,6 @@ describe('Integration', function () {
             integration.initialize();
             assert(integration._initialized === true);
         });
-
-        it('should still initialize if the integration assumes a pageview', function () {
-            var initialize = Integration.prototype.initialize = spy();
-            Integration.assumesPageview();
-            var integration = new Integration();
-            integration.initialize();
-            assert(initialize.called);
-        });
     });
 
     describe('#invoke', function () {
@@ -217,17 +209,10 @@ describe('Integration', function () {
 
     describe('#queue', function () {
         beforeEach(function () {
-            Integration.assumesPageview();
             integration = new Integration();
             integration.initialize = spy();
         });
 
-        it('should not transform #page to #initialize when a pageview is assumed', function () {
-            integration.queue('page', [
-                { name: 'page' }
-            ]);
-            assert(!integration.initialize.calledWith({ name: 'page' }));
-        });
 
         it('should push the method and args onto the queue', function () {
             integration.queue('track', ['event']);
@@ -245,31 +230,6 @@ describe('Integration', function () {
             ];
             integration.flush();
             assert(track.calledWith('event'));
-        });
-    });
-
-    describe('#page', function () {
-        it('should not call initialize the first time when a page view is assumed', function () {
-            Integration.assumesPageview();
-            integration = new Integration();
-            var initialize = integration.initialize = spy();
-            integration.page({ name: 'page name' });
-            assert(initialize.neverCalledWith({ name: 'page name' }));
-        });
-
-        it('should noop the first page call if assumepageview is enabled', function () {
-            Integration.assumesPageview();
-            var page = Integration.prototype.page = spy();
-            integration = new Integration();
-            integration.page({ name: 'hello' });
-            assert(page.neverCalledWith({ name: 'hello' }));
-        });
-
-        it('should return the value', function () {
-            Integration.prototype.page = function () {
-                return 1;
-            };
-            assert.equal(new Integration().page(), 1);
         });
     });
 
