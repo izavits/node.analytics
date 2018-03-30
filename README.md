@@ -3,7 +3,7 @@
 > A library to integrate analytics to nodejs applications
 
 [![Build Status](https://travis-ci.org/izavits/node.analytics.svg?branch=master)](https://travis-ci.org/izavits/node.analytics)
-![npm](https://badge.fury.io/js/analytica.svg)
+[![npm](https://badge.fury.io/js/analytica.svg)](https://www.npmjs.com/package/analytica)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Semver](https://img.shields.io/:semver-2.0.0-brightgreen.svg?style=flat-square)](http://semver.org)
