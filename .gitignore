@@ -29,3 +29,6 @@ nbproject
 .idea
 .vscode
 node_modules
+
+# Others
+package-lock.json
