@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 ### Changed
+- Updated local debug npm package
 - Fix npm badge link in README
 - Cleanup unneeded stuff
 
