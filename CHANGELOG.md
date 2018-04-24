@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.1] - 2018-04-24
 ### Changed
 - Remove circleCI and stick with Travis
 - Updated local debug npm package
