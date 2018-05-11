@@ -38,7 +38,7 @@
     "is": "^3.1.0",
     "lodash": "^4.17.4",
     "lodash-deep": "^2.0.0",
-    "mixpanel": "^0.7.0",
+    "mixpanel": "^0.9.1",
     "next-tick": "^0.2.2",
     "os-locale": "^2.1.0",
     "raven": "^2.3.0",
@@ -48,8 +48,8 @@
     "uuid": "^2.0.2"
   },
   "devDependencies": {
+    "mocha": "^5.1.1",
     "proclaim": "^3.4.1",
-    "mocha": "^2.2.5",
     "sinon": "^1.7.3"
   }
 }
