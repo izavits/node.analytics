@@ -44,10 +44,6 @@ describe('Integration', function () {
     });
 
     describe('integration', function () {
-        it('should create a debug method', function () {
-            assert(typeof integration.debug === 'function');
-        });
-
         it('should set #options with defaults', function () {
             Integration.option('one', false);
             integration = new Integration({ two: true });
