@@ -9,7 +9,7 @@
 
 > A library to integrate analytics to nodejs applications
 
-This is a wrapper library for popular analytics providers. It abstracts over their methods and offers and API to easily identify users and track events in nodejs applications.
+This is a wrapper library for popular analytics providers. It abstracts over their methods and offers an API to easily identify users and track events in nodejs applications.
 
 ## Table of Contents
 
