@@ -14,10 +14,9 @@ This is a wrapper library for popular analytics providers. It abstracts over the
 ## Table of Contents
 
 - [Install](#install)
-- [Usage](#usage)
 - [API](#api)
-- [Tests] (#tests)
-- [Support] (#support)
+- [Tests](#tests)
+- [Support](#support)
 - [Contributing](#contributing)
 - [License](#license)
 
